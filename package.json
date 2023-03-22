@@ -1,0 +1,27 @@
+{
+  "name": "tdd-odin-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucioFurnari/TDD-Odin-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucioFurnari/TDD-Odin-Practice/issues"
+  },
+  "homepage": "https://github.com/LucioFurnari/TDD-Odin-Practice#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "jest": "^29.5.0"
+  }
+}
