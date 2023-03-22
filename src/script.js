@@ -18,6 +18,21 @@ export const calculator = {
 }
 
 export function caesarCipher(string, shift) {
-  const charList = [{'a':0},{'b':1},{'c':2},{'d':3}]
+  const charList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','y','x','z']
+  let result = ''
+  let encrypted = 0
+  let char;
+  for(let i=0; i<string.length; i++) {
+    for(let j=0; j < charList.length; j++) {
+      if(charList[j] == string[i]) {
+        char = j
+      }
+    }
+    encrypted = char + shift;
+    while(encrypted > 25) {
+      encrypted -= 26
+    }
+    result += charList[encrypted]
+  }
+  return result
 }
-
